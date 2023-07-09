@@ -1,0 +1,266 @@
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+  }
+
+/*NavBar*/
+nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+nav li {
+        display: inline-block;
+        margin-right: -4px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+nav li:hover {
+        background-color: #ccc;
+    }
+
+/*Cuerpo Principal*/
+main {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+      background: linear-gradient(to bottom right, rgb(183, 214, 227), rgb(0, 161, 230));
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      max-width: 20rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      color: white;
+    }
+
+.aboutContainer {
+  text-align: center;
+}
+
+.aboutContainer h1 {
+  font-family: 'Belanosima', sans-serif;
+      font-size: 2rem;
+      font-weight: 500;
+      color: white;
+}
+
+.aboutContainer h3 {
+  font-family: 'Belanosima', sans-serif;
+  color: white;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+
+h1 {
+      font-family: 'Belanosima', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+
+    }
+
+/*SearchBox*/
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.searchBox i {
+  color: white;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.searchBox button {
+  margin: 1rem;
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #333333;
+  transition: background-color 0.3s, cursor 0.3s;
+  cursor: pointer;
+}
+
+.searchBox button:hover {
+  background-color: #f0f0f0;
+}
+
+.searchBox input {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  text-align: center;
+  color: #333333;
+}
+
+/*Descripcion del clima*/
+.informationBox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.2rem;
+      margin-top: 0.5rem; 
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+    
+.generalDiv {
+      position: relative;
+      width: 10rem;
+      height: 10rem;
+    }
+    
+.generalDiv img {
+      width: 9rem;
+      height: 9rem;
+      object-fit: cover;
+      opacity: 0.6;
+    }
+
+.weatherInfo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+
+      display: grid;
+    }
+
+.weatherInfo p {
+      margin-top: 0;
+    }
+
+.weatherInfo .temp {
+      font-size: 2.4rem;
+    }
+
+.weatherInfo .description {
+      align-self: end;
+    }
+
+.weatherInfo .status {
+      font-size: 1.4rem;
+    }
+
+.hotspot {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.hotspot button {
+  border: none;
+  background: none;
+  font-family: 'Belanosima', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+
+}
+
+.hotspot button:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+.hotSpotsContainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  background: linear-gradient(to bottom right, rgb(183, 214, 227), rgb(0, 161, 230));
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 20rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.hotSpotsContainer h3 {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.categoriContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.handicapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.handicapContainer img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.handicapContainer li {
+  list-style: none;
+}
+
+.handicapContainer p {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.surfStatusContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.surfStatusContenedor img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.surfStatusContenedor h3 {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+} 
+
+.dayStatus h3 {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}

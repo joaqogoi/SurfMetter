@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>index</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo">
+    </header>
+            
+    <nav>
+        <ul>
+            <li id="homeButton">Home</li>
+            <li id="usersButton" >Users</li>
+            <li id="aboutButton" >About</li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>SurfMetter</h1>
+
+        <section>
+            <div class="searchBox">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Mar del Plata" id="locationInput">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+
+
+            <div class="informationBox">
+                <div class="generalDiv">
+                    <img src="img/2.png" class="generalWeather" id="generalWeatherImg">
+                    <div class="weatherInfo">
+                        <p class="temp" id="generalWeatherT">-.-</p>
+                        <p class="description" id="generalWeatherDescription">-.-</p>
+                    </div>
+                </div>
+                <div class="generalDiv">
+                    <img src="img/18.png" class="waterWeather" id="waterWeatherImg">
+                    <div class="weatherInfo">
+                        <p class="temp" id="waterWeatherT">-.-</p>
+                        <p class="description" id="waterWeatherDescription">T° del agua</p>
+                    </div>
+                </div>
+                <div class="generalDiv">
+                    <img src="img/13.png" class="windWeather" id="windWeatherImg">
+                    <div class="weatherInfo">
+                        <p class="status" id="windWeatherStatus">Viento</p>
+                        <p class="description" id="windWeatherDescription">-.-</p>
+                    </div>
+                </div>
+                <div class="generalDiv">
+                    <img src="img/15.png" class="tideWeather" id="tideWeatherImg">
+                    <div class="weatherInfo">
+                        <p class="status" id="tideWeatherStatus">Oleaje</p>
+                        <p class="description" id="tideWeatherDescription">-.-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="hotspot">
+            <button id="hotSpotBtn">HotSpots</button>
+        </div>
+
+    </main>
+
+    <div class="hotSpotsContainer" id="hotSpotsContainer"></div>
+
+    <script type="module" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/220cf962b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
